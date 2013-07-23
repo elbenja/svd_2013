@@ -21,8 +21,15 @@ get_header(); ?>
 		</header>
 		<div class="row">
   		<div class="navigation three columns centered">
-			<div class="small btn pill-left dark"> <?php previous_post_link('%link', '&laquo; Previous', TRUE); ?></div> 
-			<div class="small btn pill-right dark"><?php next_post_link('%link', 'Next  &raquo;', TRUE) ?></div>
+ 
+			<?php 
+			    if(get_adjacent_post(false, '', true)) {  ?>
+								<div class="small btn pill-left dark"> <?php previous_post_link('%link', '&laquo; Previous', TRUE); ?></div> 
+			    <?php }
+			    if(get_adjacent_post(false, '', false)) {  ?>
+			         <div class="small btn pill-right dark"><?php next_post_link('%link', 'Next  &raquo;', TRUE) ?></div> 
+			    <?php }
+			?>
 		</div>
 		</div>
 
