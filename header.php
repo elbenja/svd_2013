@@ -37,14 +37,6 @@
 <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
 <link rel="apple-touch-icon-precomposed" href="<?php bloginfo('template_directory'); ?>/images/apple-touch-icon-precomposed.png">
 
-<!-- if page is content page -->  
-<?php if (is_single()) { ?>  
-  
-<!-- if page is others -->  
-<?php } else { ?>  
-<meta property="og:image" content="<?php bloginfo('template_directory'); ?>/images/apple-touch-icon-144x144-precomposed.png" /> <?php } ?>  
-
-
   <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
   <!-- width=device-width causes the iPhone 5 to letterbox the app, so
   we want to exclude it for iPhone 5 to allow full screen apps -->
@@ -64,7 +56,14 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 <?php wp_head(); ?>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/libs/modernizr-2.6.2.min.js"></script>
+
+<!--FB: if page is content page -->  
+<?php if (is_single()) { ?>  
+<!--FB: if page is others -->  
+<?php } else { ?>  
+<meta property="og:image" content="<?php bloginfo('template_directory'); ?>/images/apple-touch-icon-144x144-precomposed.png" /> <?php } ?>  
+
+  
 </head>
 
 <body <?php body_class(); ?>>
