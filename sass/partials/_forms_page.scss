@@ -1,0 +1,14 @@
+/** forms **/
+.field{
+	.btn input{
+		padding: 0 18px;
+	}
+}
+.pagenavi .wp-pagenavi {
+	margin:  1rem auto;
+	text-align: center;
+	a, span {
+		@include border-radius(4px);
+		padding: 3px 12px;
+	}
+}

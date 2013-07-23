@@ -1,0 +1,27 @@
+$base: #f0f0f0;
+$secondary: #2c91f1;
+
+$tlink: #2c91f1; /* #4ba7ff;*/
+$tlinkhover: adjust-hue($tlink, 15deg);
+$tsimple: darken($base, 40%);
+$tcontrast: darken($tsimple, 10%);
+$tanticontrast: lighten($base, 10%);
+
+$nav_header: lighten($tsimple, 15%);
+$nav_headerhover: #FAAB19;
+
+
+#services .toggle_container li a{color: darken($tsimple, 20%);}
+.widget-area #twitter-3{color: darken($tsimple, 20%);}
+
+/* images */
+$backgroundimg : 'images/bck01_cln.jpg';
+$tile01img :  'images/tile01_cln.jpg';
+$spriteimg: 'images/sprite_cln.png';
+
+/* footer */
+$footbckg: #e3e3e3;
+$foottile:'images/tile02_cln.jpg';
+$footbckgimg:'images/bck02_cln.jpg';
+
+$comment_bckgimg:'images/bck04_cln.jpg';

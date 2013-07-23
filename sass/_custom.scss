@@ -1,0 +1,43 @@
+// Your custom SCSS should be written here...
+
+
+
+/* images */
+//$cl_backgroundimg : 'images/bck01_cln.jpg';
+$cl_backgroundimg02 : 'images/bck02_cln.jpg';
+$cl_tile01img :  'images/tile01_cln.jpg';
+$cl_spriteimg: 'images/sprite_cln.png';
+
+b, strong, bold{
+	font-weight: normal;color: $darkgray;
+}
+
+#sidr{
+	 b, strong, bold{
+		font-weight: normal;color: $white;
+	}
+}
+
+/***************
+/***   mobiles   ***
+/****************/
+
+@include respond(all-phones) {
+ 	#content{
+ 		padding: 0;
+ 
+ 	}
+
+ 	#slideshow{
+ 		padding: 0;
+		.bx-wrapper{
+			display: none;
+		}
+ 	}
+}
+
+@import "partials/header_footer";
+@import "partials/sprites_includes";
+@import "partials/services";
+@import "partials/content";
+@import "partials/forms_page";

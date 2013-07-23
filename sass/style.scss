@@ -1,0 +1,43 @@
+/*
+Theme Name: silverdesk 2013
+Theme URI: http://silverdesk.com/
+Description: based on the 2012 theme for WordPress
+Version: 1.2
+Author: Benjamin Saravia
+Author URI: http://www.facebook.com/elbenja
+
+Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style
+*/
+
+// This import applies a global reset to any page that imports this stylesheet.
+
+
+// Import all the default blueprint modules so that we can access their mixins.
+
+@import "compass/css3"; 
+/*
+@import "compass/utilities";
+*/
+
+@import "modular-scale";
+
+@import "var/settings";
+@import "var/lists";
+
+@import "compass";
+@import "compass/reset";
+
+@import "functions/all";
+
+@import "base";
+@import "fonts";
+@import "typography";
+/**/
+
+@import "grid";
+
+@import "ui/all";
+@import "extensions/jquery.sidr.dark";
+
+@import "custom";
+@import "extensions/jquery.bxslider";

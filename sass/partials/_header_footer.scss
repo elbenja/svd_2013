@@ -1,0 +1,201 @@
+
+	.ToogleSidr, .mobileemail, .desktopemail{
+		a {
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			display: block; width: 40px;height: 40px;
+		}
+	}
+#hellobar{
+	height: 2rem;
+	overflow: hidden;
+	.container{
+		margin-top: 4px;
+		.headtext{
+			font-family: 'PerspectiveSansItalic';
+			font-size: 90%;
+		}
+	}
+}
+#page {
+	background: $cl_base repeat-x center -.6rem url($cl_tile01img );
+//	font: Arial,Helvetica,sans-serif;
+	#container{ 
+	}
+	.ToogleSidr, .mobileemail, .desktopemail{
+		a {
+			background-image: url($cl_spriteimg);
+		}
+	}
+}
+
+.mobileslider, .ToogleSidr, .mobileemail{
+	display: none;
+}
+
+#masthead {
+	width: 100%;
+	//min-height: 60px;
+	display: block;
+	
+	&.fixed {
+		top: 0;
+		left: 0;
+		z-index: 99999;
+		@include background-image(linear-gradient(rgba($white,1), rgba($white,.95) , rgba($white,.8) )); 
+	}
+	.row {	
+		padding-top: 1rem;
+		max-height: 56px; overflow: hidden;
+	}
+
+	a {color:$mygray;}
+	a:hover{color:$myyellow;}
+	ul{margin: 0;}
+	.current-menu-item {
+		border-bottom:solid 2px $myyellow;
+		padding-bottom: 10px;
+	    a{color:$myyellow;}
+	}
+ .desktopemail .current-menu-item {
+ 	padding-bottom: 5px;
+ }
+}	
+.menu-mainnav-container{
+	display: inline-block; 
+	font-family: PerspectiveSansBold;text-transform: uppercase;
+	font-weight: normal;
+	width: 50%;
+	@include horizontal-list(1%);
+	li {
+		text-align: center; width: 33.33%;
+	}
+}
+.desktopemail{
+	display: inline-block;
+	width: 40px; float: right;
+	position: relative;
+	top: -.5rem;
+	@include horizontal-list(0);
+
+}
+	.logo { 
+		width: 100%;
+		a{
+		background:url($cl_spriteimg) no-repeat;
+		display:block;
+		height:40px; width: 100%;
+		
+		}
+		h2, h1 {text-indent:-9999px;font-size:.1%; padding: 0;}
+	}	
+
+
+#newtalent{
+	background: url('images/bck02_cln.jpg') top center no-repeat;
+	article{
+		margin-top: 2rem ;
+		margin-bottom: 2rem ;
+	}
+}
+footer#colophon{
+	border-top: 1px solid $litegray;
+	.row {
+
+		font-size: 90%;
+		
+		ul{
+			@include horizontal-list(2%);
+			margin:1rem auto;
+		}
+		.site-info{margin:1rem auto;}
+	}
+}
+.copyright a{
+	color: $darkgray;
+}
+/***************
+/***   mobiles   ***
+/****************/
+@include respond(all-phones) {
+	#page {
+		background: $cl_base repeat-x center .2rem url($cl_tile01img );
+	}
+	.home #primary{
+		padding: 0;
+	}
+	#masthead{
+		padding: 0;
+		margin: 0 ;
+		.row {
+			overflow: visible;
+			max-height: 100px;
+			padding: 0;
+		}
+	}
+
+	#site-navigation{margin: .5rem auto;}
+	#hellobar,#sidebar, .tab-nav, .desktopemail{
+ 		display: none;
+ 	}
+	.logo { 
+		width: 66%;	
+		h1{ text-align: center;}	
+		a{
+			margin: auto; width: 160px
+		}
+	}	
+	.ToogleSidr, .mobileemail {
+		width: 17%;
+	}
+	.menu-mainnav-container{
+		width: 100%;}
+	#sec_nav ul{
+		@include horizontal-list(0);
+		width: 100%;
+		.menu-contact-page-container li{
+			float: right;
+		}
+	}
+	.mobileslider, .ToogleSidr, .mobileemail {
+		display: inline-block;
+	}
+}
+/*
+#header, #main, #css_selector{ @include column(24, last)}
+h1,h2, h3, blockquote {font-family: 'PerspectiveSansItalic';
+	
+}
+h1{font-size:220%;}
+h2{font-size:155%; }
+h3{font-size:145%;
+	@include prepend-top(20px); 
+	@include append-bottom(15px);
+	}
+
+.error {color:red; font-size:90%;}
+.inputfield, .txtfield  {
+	@include border-radius(4px);
+	//border:medium none;
+	//color:#FFFFFF;
+	font:14px Arial,Helvetica,sans-serif;
+	height: 30px;
+	&.error  {
+		background: lighten($myyellow,35%);
+		border-color:$myyellow;
+	}
+	&:focus	{
+		border-color:$myyellow;
+	}
+}
+
+.txtfield  { height:auto;}
+
+.alignright{ text-align:right;}
+.aligncenter{ text-align:center;}
+.floatright {float:right;margin:0 0 1em 1em; }
+
+
+
+*/

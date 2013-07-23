@@ -1,0 +1,34 @@
+$base: #220f03; /*mybrown*/
+$secondary: #FAAB19;
+
+$tlink: #FAAB19;
+$tlinkhover: white;
+$tsimple: #D4C7B0;
+$tcontrast: lighten($tsimple, 20%);
+$tanticontrast: darken($base, 10%);
+
+$nav_header: $tsimple;
+$nav_headerhover: white;
+
+#main{
+	.mantra{
+		.mantra1 {	color:#9C968D;}
+		.mantra2 {	color:#BFBBB6;}
+		.mantra3 { color:#F9F8F6;}
+	}
+	.shortabout { color: lighten($tsimple, 20%);}
+}
+#services .toggle_container li a{color: $nav_headerhover;}
+.widget-area #twitter-3{color: lighten($tsimple, 20%);}
+
+/*images*/
+$backgroundimg : 'images/bck01.jpg';
+$tile01img : 'images/tile01.jpg';
+$spriteimg: 'images/sprite.png';
+
+/* footer */
+$footbckg: #030201;
+$foottile:'images/tile02.jpg';
+$footbckgimg:'images/bck02.jpg';
+
+$comment_bckgimg:'images/bck04.png';

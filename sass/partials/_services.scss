@@ -1,0 +1,96 @@
+/*home*/
+#services {
+	ul{
+		margin: 0 auto 2rem;
+	}
+}
+#wireframes {
+	//background: url('images/iphone_screen.png') no-repeat right bottom;
+	@include transition-duration(.5s);
+	
+}
+#prototyping {
+	background: url('images/ipad_screen2.png') no-repeat left bottom;
+	@include transition-duration(.5s);
+	
+}
+#visuals {
+	background: url('images/iphone_screen2.png') no-repeat right bottom;
+	@include transition-duration(.5s);
+	
+}
+#innovation {
+	background: url('images/ipad_screen3.png') no-repeat left bottom;
+	@include transition-duration(.5s);
+	
+}
+
+.container.shaded {
+	background-color: #e9e9e9 !important;
+}
+.container.whited {
+	background-color: $white !important;
+}
+@include respond(all-phones) {
+	#wireframes , #prototyping , #visuals , #innovation {
+		background:none;
+	}
+}
+/** tablets **/
+@include respond(tablets) {
+	#prototyping {
+		background-position: -45% bottom; 
+	}
+	#visuals {
+		background-position: 110% bottom; 		
+	}
+	#innovation {
+		background-position: -25% bottom; 
+	}
+}
+@include respond(portrait-tablets) {
+	#prototyping {
+		background-position: -100% bottom; 
+	}
+	#visuals {
+		background-position: 150% bottom; 		
+	}
+	#innovation {
+		background-position: -70% bottom; 
+	}
+}
+/*
+
+.single {
+	#main{
+		background: $tanticontrast;
+		background: rgba($tanticontrast,.3);
+		#content{
+			h1{ color: $tcontrast;}
+			.NumComments{ text-align: right;}
+		}
+	}
+}
+.page #content{
+	background: $tanticontrast;
+	background: rgba($tanticontrast,.3);
+	h1{ color: $tcontrast;}
+}
+.theswitch{
+	background: $tanticontrast;
+	background: rgba($tanticontrast,.3);
+	ul.display {
+		a img {
+			@include border-radius(6px); 
+			@include box-shadow(darken($base, 20%), 0, 0, 12px);
+			
+		}
+		.theexcerpt { color:$tsimple;}
+		li{ }
+	}
+}		
+			
+#comments-wrapper{
+	background: darken($base,3.5%) url($comment_bckgimg) right bottom no-repeat;
+	}
+*/

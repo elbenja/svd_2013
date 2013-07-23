@@ -1,0 +1,33 @@
+/* Fonts */
+
+
+// Import Google Web Fonts
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+
+@font-face {
+	font-family: 'PerspectiveSansItalic';
+	src: url('font-face/persansi-webfont.eot');
+	src: local('☺'), url('font-face/persansi-webfont.woff') format('woff'), url('font-face/persansi-webfont.ttf') format('truetype'), url('font-face/persansi-webfont.svg#webfontaFvzI35c') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PerspectiveSansBold';
+	src: url('font-face/persansb-webfont.eot');
+	src: local('☺'), url('font-face/persansb-webfont.woff') format('woff'), url('font-face/persansb-webfont.ttf') format('truetype'), url('font-face/persansb-webfont.svg#webfontTMPUkPvp') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// To include your own, local copies of fonts, use the following template
+//
+//@font-face {
+//  font-family: '#{$some-font-variable}';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: url(../fonts/icons/#{$some-font-variable}.eot);
+//  src: url('../fonts/icons/#{$some-font-variable}.eot?#iefix') format('ie9-skip-eot'),
+//       url('../fonts/icons/#{$some-font-variable}.woff') format('woff'),
+//       url('../fonts/icons/#{$some-font-variable}.ttf')  format('truetype');
+//}
