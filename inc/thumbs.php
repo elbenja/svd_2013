@@ -24,3 +24,13 @@
 <?php if (function_exists('wp_pagenavi')) { ?><?php wp_pagenavi(); ?><?php } ?>				
 </div>
 
+<script>
+	if(jQuery('#theswitch').length ){ 
+  jQuery(function() {
+    var container = document.querySelector('#thumb_view');
+    var msnry = new Masonry( container, {
+      columnWidth: 233
+    });
+  });
+} 
+</script>

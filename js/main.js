@@ -39,11 +39,11 @@ jQuery(function() {
     });
 });
 
-if(jQuery('#theswitch').length ){ 
-  jQuery(function() {
-    var container = document.querySelector('#thumb_view');
-    var msnry = new Masonry( container, {
-      columnWidth: 233
-    });
-  });
-} 
+// if(jQuery('#theswitch').length ){ 
+//   jQuery(function() {
+//     var container = document.querySelector('#thumb_view');
+//     var msnry = new Masonry( container, {
+//       columnWidth: 233
+//     });
+//   });
+// } 
