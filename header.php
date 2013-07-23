@@ -27,7 +27,7 @@
 
 
 <!-- For third-generation iPad with high-resolution Retina display: -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php bloginfo('template_directory'); ?>/images/images/apple-touch-icon-144x144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php bloginfo('template_directory'); ?>/images/apple-touch-icon-144x144-precomposed.png">
 <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
 <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php bloginfo('template_directory'); ?>/images/apple-touch-icon-120x120-precomposed.png">
 <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
@@ -36,6 +36,13 @@
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php bloginfo('template_directory'); ?>/images/apple-touch-icon-72x72-precomposed.png">
 <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
 <link rel="apple-touch-icon-precomposed" href="<?php bloginfo('template_directory'); ?>/images/apple-touch-icon-precomposed.png">
+
+<!-- if page is content page -->  
+<?php if (is_single()) { ?>  
+  
+<!-- if page is others -->  
+<?php } else { ?>  
+<meta property="og:image" content="<?php bloginfo('template_directory'); ?>/images/apple-touch-icon-144x144-precomposed.png" /> <?php } ?>  
 
 
   <meta name="viewport" id="vp" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
