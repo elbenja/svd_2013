@@ -23,10 +23,10 @@ get_header(); ?>
   		<div class="navigation three columns centered">
  
 			<?php 
-			    if(get_adjacent_post(false, '', true)) {  ?>
+			    if(get_adjacent_post(true, '', true)) {  ?>
 								<div class="small btn pill-left dark"> <?php previous_post_link('%link', '&laquo; Previous', TRUE); ?></div> 
 			    <?php }
-			    if(get_adjacent_post(false, '', false)) {  ?>
+			    if(get_adjacent_post(true, '', false)) {  ?>
 			         <div class="small btn pill-right dark"><?php next_post_link('%link', 'Next  &raquo;', TRUE) ?></div> 
 			    <?php }
 			?>
