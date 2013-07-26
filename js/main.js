@@ -9,16 +9,6 @@ Gumby.ready(function() {
 	}
 });
 
-// Oldie document loaded
-Gumby.oldie(function() {
-	console.log("This is an oldie browser...");
-});
-
-Gumby.touch(function() {
-	console.log("This is a touch enabled device...");
-});
-
-
 
 */
 
@@ -39,11 +29,13 @@ jQuery(function() {
     });
 });
 
-// if(jQuery('#theswitch').length ){ 
-//   jQuery(function() {
-//     var container = document.querySelector('#thumb_view');
-//     var msnry = new Masonry( container, {
-//       columnWidth: 233
-//     });
-//   });
-// } 
+
+jQuery('#thumb_view').imagesLoaded( function() {
+    jQuery(function() {
+    var container = document.querySelector('#thumb_view');
+    var msnry = new Masonry( container, {
+      columnWidth: 233
+    });
+  });
+});
+
